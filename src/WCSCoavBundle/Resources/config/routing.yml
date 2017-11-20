@@ -1,0 +1,11 @@
+wcs_coav_homepage:
+    path:     /
+    defaults: { _controller: WCSCoavBundle:Default:index }
+
+review_index:
+    path:     /review
+    defaults: { _controller: WCSCoavBundle:Review:index }
+
+review_new:
+    path:     /review/new
+    defaults: { _controller: WCSCoavBundle:Review:new}

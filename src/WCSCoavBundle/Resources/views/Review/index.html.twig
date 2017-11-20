@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}WCSCoavBundle:Review:index{% endblock %}
+
+{% block body %}
+<h1>Welcome to the Review:index page</h1>
+{% for review in reviews %}
+    <ul>
+        <li>Review's id: {{ review.id }}</li>
+        <li>Review's text: {{ review.text }}</li>
+        <li>Review's user rated: {{ review.userRated }}</li>
+        <li>Review's note: {{ review.note }}</li>
+        <li>Review's author: {{ review.reviewAuthor }}</li>
+        <li>Review's publicationDate: {{ review.publicationDate }}</li>
+    </ul>
+{% endfor %}
+{% endblock %}
